@@ -1,0 +1,26 @@
+d 'STATAX': module to highlight Stata syntax
+d
+d  Statax is a JavaScript and LaTeX engine for highlighting Stata syntax
+d  in LaTeX and web-based documents. It can be used in online forum or any
+d  website or blog for highlighting Stata syntax. The program
+d  acurately highlights Stata commands, functions, string, local
+d  and global macros, digits, comments, and braces. 
+d
+d KW: Syntax highlighting
+d KW: HTML
+d KW: LaTeX 
+d
+d Requires: Stata version 11 
+d
+d Distribution-Date: 20160425
+d
+d Author: E.F. Haghish, University of Southern Denmark
+d Support: email haghish@imada.sdu.dk
+d
+f statax.ado
+f statax.tex
+f statax.sthlp
+f stataxmain.ado
+f stataxstyle.ado
+f stataxsyn.ado
+f stataxversion.ado

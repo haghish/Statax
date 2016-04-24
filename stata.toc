@@ -1,0 +1,3 @@
+v 1
+d 'STATAX': JavaScript and LaTeX syntax highlighter for Stata
+p statax

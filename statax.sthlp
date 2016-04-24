@@ -1,8 +1,7 @@
 {smcl}
 {* *! version 1.0  01Oct2015}{...}
 {* *! version 1.1  03Oct2015}{...}
-{* *! version 1.2  09Oct2015}{...}
-{right:Version 1.2 : October, 2015}
+{right:Version 1.2 : April, 2016}
 
 {marker title}{...}
 {title:Title}
@@ -15,7 +14,10 @@
         {p 4 4 2}E. F. Haghish{break} 
 	Center for Medical Biometry and Medical Informatics{break}
 	University of Freiburg, Germany{break} 
-        {browse haghish@imbi.uni-freiburg.de}{break}
+	and {break}
+	Department of Mathematics and Computer Science{break}
+	University of Southern Denmark{break}
+        {browse haghish@imada.sdu.dk}{break}
 	{ul:{browse "http://www.haghish.com/statax":{it:http://haghish.com/statax}}}{break}
 
 
@@ -55,6 +57,9 @@ overruled using this option {p_end}
 {title:Description}
 
 {pstd}
+Statax includes 2 engines for highlighting Stata code in HTML and LaTeX documents.
+
+{pstd}
 Based on {browse "http://shjs.sourceforge.net/doc/gplv3.html":SHJS} engine, 
 a new JavaScript was written to highlight Stata syntax. In addition, a new JQuery 
 program was written to highlight {help global} {help macro} syntax. The JavaScript 
@@ -72,7 +77,12 @@ default CSS shows them in black color.
 {pstd}
 The LaTeX syntax highlighter was developed based on the 
 {browse "https://www.ctan.org/pkg/listings?lang=en":listings} package which is used for typesetting 
-source code in the document. 
+source code in the document. In order to highlight Stata syntax in LaTeX document, you should 
+{browse "https://raw.githubusercontent.com/haghish/Statax/master/Statax.tex":append the content of Statax.tex} 
+to the heading of your LaTeX document. Alternatively, you can {bf:\include{c -(}path/to/statax.tex{c )-}} the 
+{browse "https://raw.githubusercontent.com/haghish/Statax/master/Statax.tex":Statax.tex} file in the heading of 
+your LaTeX document. Next, you can highlight Stata syntax by placing Stata commands between 
+{bf:\begin{c -(}statax{c )-}} and {bf:\end{c -(}statax{c )-}}
 
 
 {marker installation}{...}
@@ -80,7 +90,7 @@ source code in the document.
 
 {pstd}
 For adding {bf:statax.js} JavaScript to your website or HTML files or the {bf:statax.tex} to your 
-LaTeX document , visit {browse "http://www.haghish.com/statax":{it:http://haghish.com/statax}} 
+LaTeX document, visit {browse "http://www.haghish.com/statax":{it:http://haghish.com/statax}} 
 to see the full instalation guide. 
 
 
