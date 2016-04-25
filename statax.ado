@@ -85,7 +85,7 @@ program define statax
 	* Creating the file
 	****************************************************************************
 	tempname canvas 
-	qui file open `canvas' using $statax , write text `replace' `append'
+	qui file open `canvas' using "$statax" , write text `replace' `append'
 	
 	if missing("`append'") {
 		file write `canvas' `"<!doctype html>"' _n								///
@@ -108,7 +108,7 @@ program define statax
 	****************************************************************************
 	file close `canvas'
 	stataxstyle , style(`style') css("`css'") 
-	capture file open `canvas' using $statax , write text append
+	capture file open `canvas' using "$statax" , write text append
 	
 	****************************************************************************
 	* Main JavaScript engine developed by SHJS
@@ -118,7 +118,7 @@ program define statax
 	stataxmain										// developed by SHJS 	
 	stataxsyn										// developed by E. F. Haghish
 	
-	capture file open `canvas' using $statax , write text append
+	capture file open `canvas' using "$statax" , write text append
 
 	
 	****************************************************************************

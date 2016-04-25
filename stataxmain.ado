@@ -28,7 +28,7 @@ program define stataxmain
     version 11
 	
 	tempname canvas 
-	capture file open `canvas' using $statax , write text append
+	capture file open `canvas' using "$statax" , write text append
 			
 	********************************************************************
 	* This is the main engine

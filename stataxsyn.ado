@@ -29,7 +29,7 @@ program define stataxsyn
 	syntax 
 	
 	tempname canvas 
-	capture file open `canvas' using $statax , write text append
+	capture file open `canvas' using "$statax" , write text append
 			
 	********************************************************************
 	* This is the main engine

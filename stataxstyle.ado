@@ -28,7 +28,7 @@ program define stataxstyle
     syntax [anything] , [STYle(name)] [css(str)]
 	
 	tempname canvas 
-	capture file open `canvas' using $statax , write text append
+	capture file open `canvas' using "$statax" , write text append
 			
 	********************************************************************
 	* Stata Style (default)
