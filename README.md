@@ -2,9 +2,22 @@
 
 <a href="http://haghish.com/statax"><img src="./Statax2.png" align="left" width="140" hspace="10" vspace="6"></a>
 
-Statax is a syntax highlighter for Stata. The program was developed for [Weaver](http://haghish.com/weaver)
-and [MarkDoc](http://haghish.com/markdoc) packages in order to highlight the Stata code in dynamic documents 
-and dynamic slides. 
+[__`statax`__](http://haghish.com/statax) is a syntax highlighter for Stata. The packages includes two separate engines (JavaScript and LaTeX) to highlight Stata commands in HTML- and LaTeX-based documents. A plenty of Stata package produce documents or presentation slides in HTML and LaTeX and the engines can simply be wired to these packages to highlight the syntax of Stata commands. For example, 
+[`weaver`](http://haghish.com/weaver) and [MarkDoc](http://haghish.com/markdoc) packages require `statax` for syntax highlighting. 
+Long story short, syntax highlighters might improve code comprehension and encourage learners to pay more attention to the 
+code. 
+
+`statax` can acurately distinguish several different elements in Stata syntax such as:
+
+1. commands
+2. functions
+3. local and global macros
+4. strings
+4. numbers
+5. operators
+6. comments
+7. curly brackets
+
 
 The __JavaScript__ engine is hosted on my website and can be easily added to any webpage. 
 See [Statax Homepage](http://www.haghish.com/statax/statax.php) for details. in brief, 
