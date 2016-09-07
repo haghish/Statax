@@ -1,5 +1,6 @@
 # Statax : JavaScript and LaTeX syntax highlighter engine for Stata
 
+<a href="http://haghish.com/statax"><img src="./Statax.png" align="left" width="140" hspace="10" vspace="6"></a>
 Statax is a syntax highlighter for Stata. The program was developed for [Weaver](http://haghish.com/weaver)
 and [MarkDoc](http://haghish.com/markdoc) packages in order to highlight the Stata code in dynamic documents 
 and dynamic slides. 
