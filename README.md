@@ -48,7 +48,7 @@ Once the Statax file is loaded in the header, You can call the __statax__ enviro
 For example:
 
 ```latex
-	\begin{statax}
+\begin{statax}
 	
 	// JavaScript Syntax Highlighter for Stata
 	
@@ -66,7 +66,7 @@ For example:
 	Unersity of Freiburg, Germany
 	*/
 
-	\end{statax}
+\end{statax}
 ```
 	
 
