@@ -1,6 +1,6 @@
 # Statax : JavaScript and LaTeX syntax highlighter engine for Stata
 
-<a href="http://haghish.com/statax"><img src="./Statax2.png" align="left" width="140" hspace="10" vspace="6"></a>
+<a href="http://haghish.com/statax"><img src="./images/Statax.png" align="left" width="140" hspace="10" vspace="6"></a>
 
 [__`statax`__](http://haghish.com/statax) is a syntax highlighter for Stata. The packages includes two separate engines (JavaScript and LaTeX) to highlight Stata commands in HTML- and LaTeX-based documents. A plenty of Stata package produce documents or presentation slides in HTML and LaTeX and the engines can simply be wired to these packages to highlight the syntax of Stata commands. For example, 
 [`weaver`](http://haghish.com/weaver) and [MarkDoc](http://haghish.com/markdoc) packages require `statax` for syntax highlighting. 
