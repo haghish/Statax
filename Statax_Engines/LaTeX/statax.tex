@@ -7,14 +7,14 @@
 
 
 % STATAX SYNTAX HIGHLIGHTER=====================================================
+
+% Required Packages
+% ------------------------------------------------------------------------------
 \usepackage{listings}
 \usepackage{color}
 
-\definecolor{Comment}{rgb}{0,0.5,0}
-\definecolor{String}{rgb}{0.5, 0.0, 0.0}
-\definecolor{Macro}{rgb}{0.21, 0.46, 0.53}
-\definecolor{Command}{rgb}{0.0, 0.0, 0.5}
-\definecolor{Function}{rgb}{0.01, 0.28, 1.0}
+
+
 
 \lstdefinelanguage{Statax}{
 	%keywordsprefix=\$,		%problem with global Macro. There is no way to style the kywordprefix and it appears in blue
@@ -38,6 +38,13 @@
 
 
 
+% Color Setup
+% ------------------------------------------------------------------------------
+\definecolor{Comment}{rgb}{0,0.5,0}
+\definecolor{String}{rgb}{0.5, 0.0, 0.0}
+\definecolor{Macro}{rgb}{0.21, 0.46, 0.53}
+\definecolor{Command}{rgb}{0.0, 0.0, 0.5}
+\definecolor{Function}{rgb}{0.01, 0.28, 1.0}
 
 \lstset{ %
 	language={Statax},
