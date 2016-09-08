@@ -1,111 +1,57 @@
 {smcl}
-{* *! version 1.0  01Oct2015}{...}
-{* *! version 1.1  03Oct2015}{...}
-{right:Version 1.2 : April, 2016}
-
-{marker title}{...}
+{right:version 1.4}
 {title:Title}
 
 {phang}
-{cmdab:statax} {hline 2} JavaScript and LaTeX syntax highlighter for Stata
+{cmd:statax} {hline 2} {bf:JavaScript} and {bf:LaTeX} syntax highlighter for Stata. For more information, see the  {browse "http://www.haghish.com/statax":homepage} and 
+ the package  {browse "https://github.com/haghish/Statax":manual on GitHub} 
+ 
 
-
-{title:Author} 
-        {p 4 4 2}E. F. Haghish{break} 
-	Center for Medical Biometry and Medical Informatics{break}
-	University of Freiburg, Germany{break} 
-	and {break}
-	Department of Mathematics and Computer Science{break}
-	University of Southern Denmark{break}
-        {browse haghish@imada.sdu.dk}{break}
-	{ul:{browse "http://www.haghish.com/statax":{it:http://haghish.com/statax}}}{break}
-
-
-{marker syntax}{...}
-{title:Syntax}
-
-    convert do-file to HTML and highlight the syntax
-	
-	{cmdab:statax convert} using {it:{help filename}.do}, {opt replace style(name)} {opt css(filename)}
-	
-
-    create a new HTML file or append Statax JavaScript to an existing HTML file
-	
-	{cmdab:statax} using {it:{help filename}.html}, {opt replace append style(name)} {opt css(filename)}
-	
-
-{synoptset 20 tabbed}{...}
-{synopthdr}
-{synoptline}
-{synopt :{opt rep:lace}}replace the HTML file if already exists{p_end}
-
-{synopt :{opt append}}append the {bf:Statax} JavaScript engine to an existing HTML file{p_end}
-
-{synopt :{opt style(name)}}change the style of the syntax hilghlighter. The available 
-styles are
-{bf:stata}, {bf:daring}, {bf:sunset}, and {bf:wrangler}. {bf:stata} is the 
-default syntax highlighter style{p_end}
-
-{synopt :{opt css(filename)}}link an external CSS file to allow 
-users to change the appearence of the HTML file. All the styles 
-relating to the document, syntax highlighter, and the dynamic table can be 
-overruled using this option {p_end}
-{synoptline}
-
-
-{marker description}{...}
 {title:Description}
 
-{pstd}
-Statax includes 2 engines for highlighting Stata code in HTML and LaTeX documents.
+{p 4 4 2}
+Statax package includes 2 engines for highlighting Stata code in HTML and LaTeX 
+documents. The package hosts the JavaScript engine named {bf:Statax.js} and its 
+required other JavaScript programs as well as the LaTeX engine named 
+{bf:Statax.tex}. In addition, the package includes three additional syntax 
+highlighter themes which are {bf:wrandler}, {bf:daring}, and {bf:sunset}. For the 
+JavaScript engine, these themes have {bf:.css} file sufix and for LaTeX they 
+have {bf:.tex} suffix. 
 
-{pstd}
-Based on {browse "http://shjs.sourceforge.net/doc/gplv3.html":SHJS} engine, 
-a new JavaScript was written to highlight Stata syntax. In addition, a new JQuery 
-program was written to highlight {help global} {help macro} syntax. The JavaScript 
-file developed SHJS is called {it:sh_main.js} and the file developed by the 
-author for Stata is named {it:stata.js}. The author also developed a CSS style 
-sheet to create a syntax highlighter identical to Stata do-file editor, which is 
-included in {it:Stata.css} file. The JavaScript engine 
-can be used in HTML files, online forums, or any website or blog for highlighting
-Stata syntax. The program acurately highlights Stata commands, {help functions}, string, 
-local and global {help macros}, digits, comments, and braces. The engine can also 
-highlight the operator signs, but since Stata does not highlight operators, the 
-default CSS shows them in black color. 
+{p 4 4 2}
+After installing the package, the engines and the optional themes are installed 
+in the {help sysdir:PLUS directory} and thus you can use Stata to obtain the 
+path to each file. For example, to find the path to LaTeX engine and the optional 
+theme {bf:daring.tex} type:
 
+    . findfile statax.tex, path(PLUS)
+    . findfile daring.tex, path(PLUS)
 
-{pstd}
-The LaTeX syntax highlighter was developed based on the 
-{browse "https://www.ctan.org/pkg/listings?lang=en":listings} package which is used for typesetting 
-source code in the document. In order to highlight Stata syntax in LaTeX document, you should 
-{browse "https://raw.githubusercontent.com/haghish/Statax/master/Statax.tex":append the content of Statax.tex} 
-to the heading of your LaTeX document. Alternatively, you can {bf:\include{c -(}path/to/statax.tex{c )-}} the 
-{browse "https://raw.githubusercontent.com/haghish/Statax/master/Statax.tex":Statax.tex} file in the heading of 
-your LaTeX document. Next, you can highlight Stata syntax by placing Stata commands between 
-{bf:\begin{c -(}statax{c )-}} and {bf:\end{c -(}statax{c )-}}
+{p 4 4 2}
+The syntax highlighter engine is quite simple to include in LaTeX documents, 
+beamer slides, HTML documents, blogs, and websites. The package also includes 
+a quick installation that works by adding a single command in the HTML or LaTeX 
+document. For tutorials and examples, visit 
+{browse "https://github.com/haghish/Statax":Statax manual on GitHub}. 
 
 
-{marker installation}{...}
-{title:Installation}
+{title:Author}
 
-{pstd}
-For adding {bf:statax.js} JavaScript to your website or HTML files or the {bf:statax.tex} to your 
-LaTeX document, visit {browse "http://www.haghish.com/statax":{it:http://haghish.com/statax}} 
-to see the full instalation guide. 
+{p 4 4 2}
+{bf:E. F. Haghish}       {break}
+Center for Medical Biometry and Medical Informatics       {break}
+University of Freiburg, Germany       {break}
+{it:and}          {break}
+Department of Mathematics and Computer Science         {break}
+University of Southern Denmark       {break}
+haghish@imbi.uni-freiburg.de       {break}
 
+{p 4 4 2}
+{browse "www.haghish.com/statax":Statax Homepage}           {break}
+Statax Updates on  {browse "http://www.twitter.com/Haghish":Twitter}      {break}
 
-{marker example}{...}
-{title:Example of interactive use}
+    {hline}
 
-{pstd}
-You would like to get a taste of the Statax syntax highlighter? run an exanple 
-by specifying a name HTML filename 
-
-{phang2}{cmd:. statax using example.html, replace}{p_end}
-
-{pstd}
-You have a do-file and you would like to convert it to HTML and highlight the 
-syntax. It will create an HTML file with the same name as the do-file
-
-{phang2}{cmd:. statax convert using} {help filename}.do, {opt replace}‚
+{p 4 4 2}
+This help file was dynamically produced by  {browse "http://www.haghish.com/markdoc/":MarkDoc Literate Programming package}
 

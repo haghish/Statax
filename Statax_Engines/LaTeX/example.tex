@@ -2,6 +2,9 @@
 \documentclass[12pt]{article}
 
 \include{Statax}
+%\include{themes/daring}
+%\include{themes/wrangler}
+%\include{themes/sunset}
 
 \title{Statax for LaTeX}
 
@@ -14,13 +17,19 @@
 	
 \section{Statax Syntax Highlighter}
 	
-	
+	\verb|`this'|
 	\begin{statax}
+	
+	1+1=2
+	1/1=1 //not yet implemented
+	1*1=1 //not yet implemented
+	1-1=0
+	1^1=1
 	
 	// JavaScript Syntax Highlighter for Stata
 	
-	quietly erase "`This' $Example"
-	noisily do `Something'
+	quietly erase "`This' $Example 100"
+	noisily do `local' and $Global Macro 
 	forvalues num = 5/13 {
 	count if vari`num' > 10 //this is a comment
 	scalar 5 = 2 * 10 
@@ -39,8 +48,6 @@ If you'd like to help improving the package, here are 2 bugs. The first is Globa
 	
 	\begin{statax}
 	* Introducing Statax package!  
-	4 = 2 * 2
-	this is a $GlobalMacro 
 	\end{statax}
 
 \end{document}
