@@ -1,0 +1,19 @@
+﻿ /*
+    Developed by E. F. Haghish http://www.haghish.com/
+    Center for Medical Biometry and Medical Informatics
+    University of Freiburg, Germany
+    haghish@imbi.uni-freiburg.de
+    for documentation visit http://www.haghish.com/statax
+ */ 
+	
+pre.sh_sourceCode .sh_keyword          { color: #294277; }     /* Stata Commands        */
+pre.sh_sourceCode .sh_string           { color: #DF0707; }     /* strings               */
+pre.sh_sourceCode .sh_macro            { color: #646485; }     /* local & global macros */
+pre.sh_sourceCode .sh_string .sh_macro { color: #DF0707; }     /* macro in string       */
+pre.sh_sourceCode .sh_comment          { color: #C3741C; }     /* Comment               */
+pre.sh_sourceCode .sh_predef_func      { color: #466A97; }     /* Stata Functions       */
+pre.sh_sourceCode .sh_function         { color: #466A97; }     /* Any Function()        */
+pre.sh_sourceCode .sh_number           { color: #294277; }     /* Numbers               */
+pre.sh_sourceCode .sh_symbol           { color: #294277; }     /* Operators and signs   */
+pre.sh_sourceCode .sh_cbracket         { color: #CD5C5C; }     /* Braces                */
+pre.sh_stata{font-family: 'menlo-regular', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'sans-serif','Trebuchet MS';background-color:#FFFCE5;}

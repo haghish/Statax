@@ -1,0 +1,98 @@
+<!doctype html>
+<!-- Statax JavaScript Syntaxhighlighter is developed by E. F. Haghish (http://www.haghish.com)  -->
+<!-- The JavaScript and CSS files can be downloaded from http://www.haghish.com/statax           -->
+<!-- based on a program written by SHJS. License: http://shjs.sourceforge.net/doc/gplv3.html     -->
+
+
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Statax syntax highlighter. Learn more on http://www.haghish.com">
+<meta name="author" content="E. F. Haghish">
+
+
+
+<!-- 
+Stata Syntax Highlighter Style Sheet 
+Developed by E. F. Haghish http://www.haghish.com/
+Center for Medical Biometry and Medical Informatics
+University of Freiburg, Germany
+haghish@imbi.uni-freiburg.de
+for documentation visit http://www.haghish.com/statax
+-->
+
+
+<script type="text/javascript" src='http://haghish.com/statax/Statax.js'></script>
+
+
+<!--  ADD CSS STYLE TO CHANGE THE DEFAULT -->
+<link rel="stylesheet" type="text/css" href="./CSS/Sunset.css">
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+
+
+
+
+
+<h1>Statax JavaScript Syntax Highlighter for Stata</h1>
+<h2>Example of Statax syntax highlighter</h2>
+
+<pre class="sh_stata" >
+* Introducing Statax package!
+// JavaScript Syntax Highlighter for Stata
+
+quietly erase "`This' $Example"
+noisily do `Something' $Awesome
+forvalues num = 5/13 {
+    count if vari`num' > 10
+    generate x = runiform()
+    margin(10)
+}
+
+/*
+E. F. Haghish
+Center for Medical Biometry and Medical Informatics
+Unersity of Freiburg, Germany
+*/
+
+scalar m = 10 * 10
+</pre>
+
+
+<h2>Applying different style sheets</h2>
+<p>The <b>Additional CSS Styles</b> directory includes 4 css files. To change the default syntax highlighter:
+<ul>
+	<li>1- Remove the <i>Statax.css</i> file</li>
+	<li>2- Copy any of the <i>Sunset.css</i>, <i>Daring.css</i>, or <i>Wrangler.css</i> files to the directory where the JavaScript files are</li>
+	<li>3- Rename the new CSS file to <i>Statax.CSS</i>
+</li>
+</ul>	
+
+<p style="background:#FFFFCC;"> 
+	For documentation and details visit <a href="http://www.haghish.com/statax">http://www.haghish.com/statax</a>
+	<br>
+	Twitter updates <a href="https://twitter.com/Haghish">@Haghish</a>
+</p>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+
+
+
