@@ -23,24 +23,31 @@ The __JavaScript__ engine is hosted on my website and can be easily added to any
 See [Statax Homepage](http://www.haghish.com/statax/statax.php) for details. in brief, 
 all you have to do to load the javaScript in your HTML document is adding the following code:
 
-	<script type="text/javascript" src='http://haghish.com/statax/Statax.js'></script>
+```js
+<script type="text/javascript" src='http://haghish.com/statax/Statax.js'></script>
+```
 
 And writing your Stata code in:
 
-	<pre class="sh_stata">
+```html
+<pre class="sh_stata">
 	. Stata code
 	. Stata code
 	...
-	</pre>
+</pre>
+```
 
 
 The __LaTeX__ syntax highlighter is even easier to implement. All you need to do is loading the __Statax.tex__ in the header of your latex document, before you `\begin{document}` as shown below:
 
-	\input{Statax}
+```latex
+\input{Statax}
+```
 
 Once the Statax file is loaded in the header, You can call the __statax__ environment to highlight the Stata syntax.
 For example:
 
+```latex
 	\begin{statax}
 	
 	// JavaScript Syntax Highlighter for Stata
@@ -60,7 +67,7 @@ For example:
 	*/
 
 	\end{statax}
-
+```
 	
 
 
