@@ -52,6 +52,10 @@ Statax Updates on [Twitter](http://www.twitter.com/Haghish)
 This help file was dynamically produced by [MarkDoc Literate Programming package](http://www.haghish.com/markdoc/)
 ***/
 
+program statax
+display as txt "{p}{bf:statax} is not a command. It only includes a "			///
+"JavaScript and LaTeX engines for highlighting Stata syntax. Visit "			///
+`"{browse "https://github.com/haghish/statax"} for more information"'
+end
 
-
-markdoc statax.ado, export(sthlp) replace
+*markdoc statax.ado, export(sthlp) replace
