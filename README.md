@@ -10,12 +10,7 @@ code.
 Installation
 ------------
 
-The __Statax__ releases are also hosted on SSC server. So you can download the latest release as follows:
-
-    ssc install statax
-    
-You can also directly download __Statax__ from GitHub which includes the latest beta version (unreleased). The `force` 
-option ensures that you _reinstall_ the package, even if the release date is not yet changed, and thus, must be specified. 
+You can directly download __Statax__ from GitHub. Check the [release page](https://github.com/haghish/Statax/releases) for the curent version and new features. 
   
 ```js
 net install statax, from("https://raw.githubusercontent.com/haghish/statax/master/")
