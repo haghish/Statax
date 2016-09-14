@@ -12,13 +12,17 @@ d KW: LaTeX
 d
 d Requires: Stata version 11 
 d
-d Distribution-Date: 20160906
+d Distribution-Date: 20160914
 d
 d Author: E.F. Haghish, University of Southern Denmark
 d Support: email haghish@imada.sdu.dk
 d
 F sh_main.js
 F statax.ado
+F stataxmain.ado
+F stataxstyle.ado
+F stataxsyn.ado
+F stataxvesion.ado
 F statax.sthlp
 F Statax.css
 F Statax.js
