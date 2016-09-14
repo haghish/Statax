@@ -7,6 +7,25 @@
 Long story short, syntax highlighters might improve code comprehension and encourage learners to pay more attention to the 
 code. 
 
+Installation
+------------
+
+The __Statax__ releases are also hosted on SSC server. So you can download the latest release as follows:
+
+    ssc install statax
+    
+You can also directly download __Statax__ from GitHub which includes the latest beta version (unreleased). The `force` 
+option ensures that you _reinstall_ the package, even if the release date is not yet changed, and thus, must be specified. 
+  
+    net install statax, force  from("https://raw.githubusercontent.com/haghish/statax/master/")
+    
+The complete guide for installing them is provided in the MarkDoc help file and also, 
+[__Statax Homepage__ ](http://www.haghish.com/statax/statax.php)
+
+
+Description
+------------
+
 `statax` can acurately distinguish several different elements in Stata syntax such as:
 
 1. commands
@@ -83,20 +102,7 @@ Author
   _http://www.haghish.com/weaver_  
   _[@Haghish](https://twitter.com/Haghish)_   
   
-Installation
-------------
 
-The __Statax__ releases are also hosted on SSC server. So you can download the latest release as follows:
-
-    ssc install statax
-    
-You can also directly download __Statax__ from GitHub which includes the latest beta version (unreleased). The `force` 
-option ensures that you _reinstall_ the package, even if the release date is not yet changed, and thus, must be specified. 
-  
-    net install statax, force  from("https://raw.githubusercontent.com/haghish/statax/master/")
-    
-The complete guide for installing them is provided in the MarkDoc help file and also, 
-[__Statax Homepage__ ](http://www.haghish.com/statax/statax.php)
     
 
 
