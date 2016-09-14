@@ -109,7 +109,8 @@ program define stataxsyn
 				"/\b(?:"														///
 				"adoupdate|" ///
 				"install|ssc|adgakern|synlight|markdoc|weave|close|div|"    	///
-					"txt|img|tble|misstable|bhatmesd|sysuse|scatter|forval|"	///					///
+					"R|Rcall|diagram|"	///
+					"txt|img|tbl|misstable|bhatmesd|sysuse|scatter|forval|"		///
 					"bcvwarpw|bcloglog|autosmoo|atkinson|asurvcrv|"             ///
 					"asserteq|altitude|adgaker2|xriqtest|xri_slll|"             ///
 					"xri_pnll|xri_mpll|xri_mell|xri_enll|xi_mkun2|"             ///
