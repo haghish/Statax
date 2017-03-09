@@ -20,7 +20,7 @@
 	// JavaScript Syntax Highlighter for Stata
 	
 	quietly erase "`This' $Example"
-	noisily do `Something'
+	noisily do `Something' $fun
 	forvalues num = 5/13 {
 	count if vari`num' > 10 //this is a comment
 	scalar 5 = 2 * 10 
@@ -40,7 +40,7 @@ If you'd like to help improving the package, here are 2 bugs. The first is Globa
 	\begin{statax}
 	* Introducing Statax package!  
 	4 = 2 * 2
-	this is a $GlobalMacro 
+	this is a $GlobalMacro that doesn't continue!
 	\end{statax}
 
 \end{document}
