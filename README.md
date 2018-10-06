@@ -85,11 +85,43 @@ For example:
 \end{statax}
 ```
 	
+Customization
+-------------
+
+`statax` can be easily customized. To do that, you need to include a theme file (Tex or CSS) to redefine the default syntax highlighter. The package includes three additional themes to provide examples of theme customization. 
+
+### HTML documents
+
+To customize the HTML document, source the CSS after sourcing the JavaScript file in the header. For example, you can add the `Sunset.css` theme from the web as follows:
+
+#### Sunset theme
+
+```js
+<script type="text/javascript" src='http://haghish.com/statax/Statax.js'></script>
+<link rel="stylesheet" type="text/css" href="http://haghish.com/statax/CSS/Sunset.css">
+```
+
+<img src="./images/Sunset.png" align="center" width="450">
+
+#### Daring theme
+
+```js
+<script type="text/javascript" src='http://haghish.com/statax/Statax.js'></script>
+<link rel="stylesheet" type="text/css" href="http://haghish.com/statax/CSS/Daring.css">
+```
+
+<img src="./images/Daring.png" align="center" width="450">
 
 
- 
+#### Wrangler theme
 
-        
+```js
+<script type="text/javascript" src='http://haghish.com/statax/Statax.js'></script>
+<link rel="stylesheet" type="text/css" href="http://haghish.com/statax/CSS/Wrangler.css">
+```
+
+<img src="./images/Wrangler.png" align="center" width="450">
+
 Author
 ------
   **E. F. Haghish**  
