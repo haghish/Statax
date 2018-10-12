@@ -122,6 +122,24 @@ To customize the HTML document, source the CSS after sourcing the JavaScript fil
 
 <img src="./images/Wrangler.png" align="center" width="450">
 
+
+Complete example files
+======================
+
+a very minimal HTML file with syntax highlighter would look like:
+
+```tex
+\documentclass[12pt]{article}
+\include{Statax}
+\begin{document}
+  \section{Statax Syntax Highlighter}
+  \begin{statax}
+    // Stata code or comment ...
+  \end{statax}
+\end{document}
+```
+
+
 Author
 ------
   **E. F. Haghish**  
