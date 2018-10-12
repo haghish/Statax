@@ -126,7 +126,7 @@ To customize the HTML document, source the CSS after sourcing the JavaScript fil
 Complete example files
 ======================
 
-a very minimal HTML file with syntax highlighter would look like:
+A minimalistic _LaTeX_ file is shown below with a code section that highlights Stata syntax:
 
 ```tex
 \documentclass[12pt]{article}
@@ -139,6 +139,20 @@ a very minimal HTML file with syntax highlighter would look like:
 \end{document}
 ```
 
+and the code below shows a simple HTML file that can highlight Stata code:
+
+```html
+<html>
+  <head>
+    <script src='http://haghish.com/statax/Statax.js'></script>
+  </head>
+  <body>
+    <pre class="sh_stata" >
+      // place Stata code or commnents here ...
+    </pre>
+  </body>
+</html>
+```
 
 Author
 ------
