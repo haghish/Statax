@@ -154,6 +154,14 @@ and the code below shows a simple HTML file that can highlight Stata code:
 </html>
 ```
 
+
+
+
+Updating Statax with new Stata commands
+=======================================
+
+The `statax` engines can be updated to recognize new Stata commands and functions. The _LaTeX_ and JavaScript engines both include separate word lists for Stata commands and functions. These word lists are defined in `Statax.tex` and `StataxSource.js` files respectively. The files include commented sections indicating where and how to add new Stata commands or functions. 
+
 Author
 ------
   **E. F. Haghish**  
