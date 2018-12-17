@@ -11,9 +11,22 @@ Installation
 ------------
 
 You can directly download __Statax__ from GitHub. Check the [release page](https://github.com/haghish/Statax/releases) for the curent version and new features. 
-  
+
+<!--
 ```js
 net install statax, from("https://raw.githubusercontent.com/haghish/statax/master/")
+```
+-->
+
+The [__`github package`__](https://github.com/haghish/github) is the only recommended way for installing **`statax`**. Once [__`github`__](https://github.com/haghish/github) is installed, type any of the following commands:
+
+```js
+gitget statax
+```
+_or alternatively, if you'd like to type more!_:
+
+```js
+github install haghish/statax
 ```
     
 The complete guide for installing them is provided in the MarkDoc help file and also, 
