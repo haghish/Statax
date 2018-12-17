@@ -21,11 +21,6 @@ net install statax, from("https://raw.githubusercontent.com/haghish/statax/maste
 The [__`github package`__](https://github.com/haghish/github) is the only recommended way for installing **`statax`**. Once [__`github`__](https://github.com/haghish/github) is installed, type any of the following commands:
 
 ```js
-gitget statax
-```
-_or alternatively, if you'd like to type more!_:
-
-```js
 github install haghish/statax
 ```
     
