@@ -1,3 +1,5 @@
+> __Cite__: Haghish, E. F. On The Importance Of Syntax Highlighting For Teaching Statistics.
+
 # Statax : JavaScript and LaTeX syntax highlighter engine for Stata
 
 <a href="http://haghish.com/statax"><img src="./images/Statax.png" align="left" width="140" hspace="10" vspace="6"></a>
