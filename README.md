@@ -1,4 +1,4 @@
-> __Cite__: Haghish, E. F. On The Importance Of Syntax Highlighting For Teaching Statistics.
+> __Cite__: Haghish, E. F. (2019). On the importance of syntax coloring for teaching statistics. The Stata Journal, 19(1), 83-86.
 
 # Statax : JavaScript and LaTeX syntax highlighter engine for Stata
 
